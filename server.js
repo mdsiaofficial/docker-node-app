@@ -140,8 +140,8 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Handle 404 for undefined routes
-app.use('*', (req, res) => {
+// Handle 404 for undefined routes - FIXED VERSION
+app.use((req, res, next) => {
   res.status(404).json({
     success: false,
     message: 'Route not found'
