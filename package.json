@@ -1,0 +1,20 @@
+{
+  "name": "docker-node-app",
+  "version": "1.0.0",
+  "description": "A Node.js ESM app with 5 API endpoints running in Docker",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "keywords": ["nodejs", "docker", "api", "esmodules"],
+  "author": "mdsiaofficial",
+  "license": "MIT"
+}
